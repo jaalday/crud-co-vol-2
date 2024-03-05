@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+.card {
+  padding: 2em;
+  background-color: rgb(58, 51, 80);
+  width:60%;
+  margin-top: 20%;
+  border: 4px solid white;
+  margin:auto;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.profile-card{
+  width:60%;
+  height:800px;
+  background-color: rgb(68, 61, 105);
+  margin: auto;
+  border: 2px solid white;
+}
+.title-profile{
+ border-bottom: 2px solid white;
+ margin-bottom: 10px;
+
+}
+.info-box{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  
+}
+.box-1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  
+  margin-left: 10px;
+
+
+}
+.box-2{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* border: 2px solid green; */
+
+}
+.box-3{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  border: 2px solid blue;
+  margin-top: 20px;
+}
+.box-4{
+  margin-top: 20px;
+  margin-left: 20px;
+  grid-column-start: 3.5;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  border: solid
+}
+.about-me{
+  margin-top: 40px;
+  width:60%;
+  height:50%;
+
+}
+
+.img{
+  width:200px;
+  height:150px;
+}
+
