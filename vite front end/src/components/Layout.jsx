@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation';
 
 const primaryNav = [
    
-    {title: 'Sign-up', url: '/sign-up'},
+    {title: 'Sign-up', url: '/users/add'},
     {title: 'Profile', url: '/profile'},
     {title: 'Log-in', url: '/login'},
     
@@ -16,9 +16,9 @@ const Layout =() => {
     return(
 
         <>
-       
-        <Navigation navItems={primaryNav}/>
         
+        <Navigation navItems={primaryNav}/>
+       
      
       
         <Outlet/>

@@ -13,12 +13,12 @@ const Navigation = ({ navItems }) => {
      <nav>
    
         
-        <h2 >CRUD co</h2>
+       
         <div >
            
                
            
-        <div className="nav-text">
+        <div className="nav-bar">
                 {navItems.map((link, index) => {
                     return (<p className="nav-text" key={`${index}`}>
                         <Link to = {link.url}>{link.title}</Link>

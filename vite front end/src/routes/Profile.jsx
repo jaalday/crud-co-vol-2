@@ -48,7 +48,7 @@ const Profile = ({action}) => {
                 </div>
            
             <div className="box-2">
-                <input className="about-me" type="text" placeholder="enter information about you"></input><br/><br/><button >Add</button>
+                <input className="about-me" type="text" placeholder="enter information about you"></input><br/><br/><button>Add</button>
             </div>
             <div className="box-3">
                 <p>Please Enter some URL's you would like to shorten </p>
@@ -56,11 +56,12 @@ const Profile = ({action}) => {
                     <input type="text" placeholder="enter a url"/><button>Submit</button>
                 </label>
                 <br/>
-                <label>
-                    <input type="text" placeholder="enter a url"/><button>Submit</button>
-                </label>
+                <br/>
+               
             </div>
-            <div className="box-4">box4</div>
+            <div className="box-4">
+
+            </div>
             
 
           
