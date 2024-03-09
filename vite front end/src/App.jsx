@@ -2,11 +2,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AddUser, { action as addUserAction } from "./routes/AddUser";
 import Profile from "./routes/Profile";
 import Layout from "./components/Layout";
-import Login from "./routes/Login";
-
+import Login, { action as addLoginAction } from "./routes/Login";
+import { AuthProvider } from "./AuthContext";
+import LogOut from './routes/LogOut'
 import "./App.css";
 import Home from "./routes/Home";
-import AddLinks from "./routes/AddLinks";
+import AddLinks, { action as addLinkAction } from "./routes/AddLinks";
 
 const router = createBrowserRouter([
   {
@@ -28,10 +29,16 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+        action: addLoginAction,
       },
       {
         path: "/links/add",
         element: <AddLinks />,
+        action: addLinkAction,
+      },
+      {
+      path: "/logout",
+      element: <LogOut/>
       },
 
       // {
@@ -43,7 +50,10 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return <AuthProvider>
+    <RouterProvider router={router} />
+    </AuthProvider>;
 }
+
 
 export default App;

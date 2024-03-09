@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom"
+import { Link, Form } from "react-router-dom"
 import { useState, useEffect } from "react"
+
+
 
 
 
@@ -24,6 +26,9 @@ const Profile = ({action}) => {
         e.preventDefault();
         action(input1);
     }
+
+
+
     
     
 
@@ -52,9 +57,15 @@ const Profile = ({action}) => {
             </div>
             <div className="box-3">
                 <p>Please Enter some URL's you would like to shorten </p>
+
+
+                <Form method="POST">
                 <label>
                     <input type="text" placeholder="enter a url"/><button>Submit</button>
                 </label>
+                </Form>
+
+
                 <br/>
                 <br/>
                

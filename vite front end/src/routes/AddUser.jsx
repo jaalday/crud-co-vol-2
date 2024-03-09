@@ -8,7 +8,7 @@ export async function action({ request }) {
   const password = formData.get("password");
 
   const data = { username, password };
-  const url = "http://127.0.0.1:8000/users/add";
+  const url = "http://localhost:8000/users/add";
 
   const addUser = await fetch(url, {
     method: "POST",
@@ -25,7 +25,8 @@ export async function action({ request }) {
 const AddUser = () => {
   return (
     <>
-      <div className="card">
+      <div className="card2">
+        <h1>Sign-Up</h1>
         <Form id="addUser" method="POST">
           <label>
             Email:

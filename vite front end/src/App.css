@@ -18,8 +18,12 @@
 .nav-text{
   display:flex;
   display:inline-block;
-  word-spacing: 20%;
+  word-spacing: 20px;
+  color: white;
  
+  
+}
+.logo{
   
 }
 

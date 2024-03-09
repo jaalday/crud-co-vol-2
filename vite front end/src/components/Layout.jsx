@@ -7,6 +7,7 @@ const primaryNav = [
     {title: 'Sign-up', url: '/users/add'},
     {title: 'Profile', url: '/profile'},
     {title: 'Log-in', url: '/login'},
+    {title: 'LogOut', url:'/logout'},
     
 ]
 
